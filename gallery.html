@@ -1,1 +1,70 @@
-<!-- Gallery Page -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Ranjit Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container--wide">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a>
+      <ul class="navbar__links" role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <div class="navbar__actions"><button class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section__eyebrow">Gallery</p>
+    <h1 class="page-hero__title">A Peek Inside Ranjit Cafe</h1>
+    <p class="page-hero__sub">Our cozy space, our food, and the moments that make us who we are.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="gallery-grid">
+      <div class="gallery-item" data-src="https://picsum.photos/seed/cafe01/800/600" data-alt="Cafe interior view"><img src="https://picsum.photos/seed/cafe01/600/400" alt="Cafe interior view" width="600" height="400" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/coffee02/800/600" data-alt="Freshly brewed coffee"><img src="https://picsum.photos/seed/coffee02/600/800" alt="Freshly brewed coffee" width="600" height="800" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/momo03/800/600" data-alt="Steaming hot momos"><img src="https://picsum.photos/seed/momo03/600/500" alt="Steaming hot momos" width="600" height="500" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/cafe04/800/600" data-alt="Cozy seating area"><img src="https://picsum.photos/seed/cafe04/600/700" alt="Cozy seating area" width="600" height="700" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/breakfast05/800/600" data-alt="Nepali breakfast spread"><img src="https://picsum.photos/seed/breakfast05/600/450" alt="Nepali breakfast spread" width="600" height="450" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/latte06/800/600" data-alt="Latte art close-up"><img src="https://picsum.photos/seed/latte06/600/600" alt="Latte art close-up" width="600" height="600" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/cafenight07/800/600" data-alt="Cafe evening ambiance"><img src="https://picsum.photos/seed/cafenight07/600/800" alt="Cafe evening ambiance" width="600" height="800" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/pastry08/800/600" data-alt="Fresh pastries"><img src="https://picsum.photos/seed/pastry08/600/400" alt="Fresh pastries" width="600" height="400" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/tea09/800/600" data-alt="Masala tea"><img src="https://picsum.photos/seed/tea09/600/500" alt="Masala tea" width="600" height="500" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/food11/800/600" data-alt="Delicious meal platter"><img src="https://picsum.photos/seed/food11/600/450" alt="Delicious meal platter" width="600" height="450" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/window12/800/600" data-alt="Cafe window with plants"><img src="https://picsum.photos/seed/window12/600/600" alt="Cafe window with plants" width="600" height="600" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+      <div class="gallery-item" data-src="https://picsum.photos/seed/cafestaff10/800/600" data-alt="Friendly cafe staff"><img src="https://picsum.photos/seed/cafestaff10/600/700" alt="Friendly cafe staff" width="600" height="700" loading="lazy"><div class="gallery-item__overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="" width="1200" height="800">
+</div>
+
+<footer class="footer">
+  <div class="container--wide">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" style="display:inline-flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4);"><svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a><p>A cozy corner in Tilottama, Butwal where every cup tells a story.</p></div>
+      <div class="footer__col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Hours</h4><ul role="list"><li><a>Sun-Fri: 7am-9pm</a></li><li><a>Saturday: 8am-10pm</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul role="list"><li><a href="contact.html">Tilottama, Butwal</a></li><li><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Ranjit Cafe. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

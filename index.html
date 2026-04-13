@@ -1,1 +1,150 @@
-<!-- Homepage -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Ranjit Cafe</title>
+  <meta name="description" content="Ranjit Cafe — A cozy cafe serving delicious food, coffee and moments worth remembering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container--wide">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Ranjit Cafe home">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/>
+          <path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/>
+        </svg>
+        <span class="navbar__logo-text">Ranjit Cafe</span>
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <img src="https://picsum.photos/seed/ranjitcafe1/900/900" alt="Warm cafe ambiance" width="900" height="900" loading="lazy" class="hero__image">
+  <div class="container--wide">
+    <div class="hero__content">
+      <div class="hero__eyebrow">☕ Est. 2018 · Tilottama, Butwal</div>
+      <h1 class="hero__title">Where Every Sip Feels Like <span>Home</span></h1>
+      <p class="hero__subtitle">Ranjit Cafe — your cozy corner for freshly brewed coffee, homestyle Nepali meals, and warm conversations worth remembering.</p>
+      <div class="hero__actions">
+        <a href="menu.html" class="btn btn--primary">Explore Our Menu</a>
+        <a href="contact.html" class="btn btn--outline">Visit Us</a>
+      </div>
+      <div class="hero__stats">
+        <div><span class="hero__stat-number">6+</span><span class="hero__stat-label">Years Serving</span></div>
+        <div><span class="hero__stat-number">50+</span><span class="hero__stat-label">Menu Items</span></div>
+        <div><span class="hero__stat-number">4.8&#9733;</span><span class="hero__stat-label">Customer Rating</span></div>
+        <div><span class="hero__stat-number">1000+</span><span class="hero__stat-label">Happy Guests</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="section__header">
+      <p class="section__eyebrow">Our Specials</p>
+      <h2 class="section__title">Crafted with Love</h2>
+      <p class="section__subtitle">From rich Nepali milk tea to crispy momos and fresh pasta — every dish is made fresh daily with local ingredients.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><img src="https://picsum.photos/seed/coffee11/600/450" alt="Specialty Coffee" width="600" height="450" loading="lazy" class="card__img"><div class="card__body"><p class="card__tag">&#9749; Beverages</p><h3 class="card__title">Signature Espresso</h3><p class="card__text">Rich, bold, and perfectly balanced. Our house espresso is pulled fresh every time.</p><p class="card__price">Rs. 120</p></div></div>
+      <div class="card"><img src="https://picsum.photos/seed/dumplings2/600/450" alt="Steaming Momos" width="600" height="450" loading="lazy" class="card__img"><div class="card__body"><p class="card__tag">Nepali Specials</p><h3 class="card__title">Steam Momos</h3><p class="card__text">Juicy homemade momos stuffed with spiced chicken or veg, served with tomato chutney.</p><p class="card__price">Rs. 180</p></div></div>
+      <div class="card"><img src="https://picsum.photos/seed/breakfast3/600/450" alt="Hearty Breakfast" width="600" height="450" loading="lazy" class="card__img"><div class="card__body"><p class="card__tag">Breakfast</p><h3 class="card__title">Full Nepali Breakfast</h3><p class="card__text">Roti, fried egg, bhatmas sadeko, and a cup of chiya to start your morning right.</p><p class="card__price">Rs. 250</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-10)"><a href="menu.html" class="btn btn--outline">View Full Menu</a></div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header"><p class="section__eyebrow">Why Ranjit Cafe?</p><h2 class="section__title">More Than Just a Cafe</h2></div>
+    <div class="cards-grid">
+      <div class="card" style="text-align:center;padding:var(--space-6);"><div style="font-size:2.5rem;margin-bottom:var(--space-4)">&#127807;</div><h3 class="card__title" style="font-size:var(--text-lg)">Fresh Ingredients</h3><p class="card__text" style="margin:var(--space-3) auto 0">We source locally grown vegetables, herbs, and spices from Butwal's morning market every day.</p></div>
+      <div class="card" style="text-align:center;padding:var(--space-6);"><div style="font-size:2.5rem;margin-bottom:var(--space-4)">&#9749;</div><h3 class="card__title" style="font-size:var(--text-lg)">Quality Coffee</h3><p class="card__text" style="margin:var(--space-3) auto 0">Premium Nepali and imported beans, ground fresh for every cup with precision and care.</p></div>
+      <div class="card" style="text-align:center;padding:var(--space-6);"><div style="font-size:2.5rem;margin-bottom:var(--space-4)">&#127969;</div><h3 class="card__title" style="font-size:var(--text-lg)">Cozy Atmosphere</h3><p class="card__text" style="margin:var(--space-3) auto 0">Warm lighting, comfortable seating, and a friendly team — the perfect place to relax or work.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="section__header"><p class="section__eyebrow">Guest Reviews</p><h2 class="section__title">What People Say</h2></div>
+    <div class="testimonials-grid">
+      <div class="testimonial"><div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial__text">"Best momos in Butwal, hands down. The atmosphere is so warm and the staff is incredibly friendly. My go-to spot every weekend!"</p><div class="testimonial__author"><div class="testimonial__avatar">R</div><div><div class="testimonial__name">Ramesh Sharma</div><div class="testimonial__location">Butwal, Rupandehi</div></div></div></div>
+      <div class="testimonial"><div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial__text">"The coffee here is absolutely amazing. I come here every morning before work. The full breakfast is unbeatable value for money!"</p><div class="testimonial__author"><div class="testimonial__avatar">S</div><div><div class="testimonial__name">Sunita Thapa</div><div class="testimonial__location">Tilottama, Lumbini</div></div></div></div>
+      <div class="testimonial"><div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="testimonial__text">"Lovely cozy cafe with great vibes. The Nepali milk tea is something else! Perfect for studying or catching up with friends."</p><div class="testimonial__author"><div class="testimonial__avatar">A</div><div><div class="testimonial__name">Anita Gurung</div><div class="testimonial__location">Pokhara, Gandaki</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container" style="text-align:center;">
+    <p class="section__eyebrow">Visit Us Today</p>
+    <h2 class="section__title">Your Table is Waiting</h2>
+    <p class="section__subtitle" style="margin:0 auto var(--space-8)">Open daily 7am-9pm. Located in Tilottama, Butwal.</p>
+    <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn--primary">Find Us</a>
+      <a href="gallery.html" class="btn btn--outline">See the Cafe</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container--wide">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" style="display:inline-flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4);">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg>
+          <span class="navbar__logo-text">Ranjit Cafe</span>
+        </a>
+        <p>A cozy corner in Tilottama, Butwal where every cup tells a story and every meal feels like home.</p>
+      </div>
+      <div class="footer__col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Hours</h4><ul role="list"><li><a>Sun-Fri: 7am-9pm</a></li><li><a>Saturday: 8am-10pm</a></li><li><a style="color:var(--color-green)">Open Today</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul role="list"><li><a href="contact.html">Tilottama, Butwal</a></li><li><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></li><li><a href="mailto:hello@ranjitcafe.com.np">hello@ranjitcafe.com.np</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Ranjit Cafe. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

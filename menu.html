@@ -1,1 +1,104 @@
-<!-- Menu Page -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Ranjit Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container--wide">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a>
+      <ul class="navbar__links" role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html" class="active">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <div class="navbar__actions"><button class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section__eyebrow">Our Menu</p>
+    <h1 class="page-hero__title">Fresh. Homemade. Delicious.</h1>
+    <p class="page-hero__sub">Made fresh daily with local ingredients. Prices in Nepali Rupees (Rs.)</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" role="tab" data-tab="coffee">Coffee &amp; Tea</button>
+      <button class="menu-tab" role="tab" data-tab="nepali">Nepali Specials</button>
+      <button class="menu-tab" role="tab" data-tab="breakfast">Breakfast</button>
+      <button class="menu-tab" role="tab" data-tab="fastfood">Fast Food</button>
+      <button class="menu-tab" role="tab" data-tab="desserts">Desserts</button>
+      <button class="menu-tab" role="tab" data-tab="drinks">Cold Drinks</button>
+    </div>
+    <div class="menu-section active" id="tab-coffee">
+      <div class="menu-item"><div class="menu-item__icon">&#9749;</div><div class="menu-item__info"><div class="menu-item__name">Espresso</div><div class="menu-item__desc">Bold, rich single shot of freshly ground coffee</div></div><div class="menu-item__price">Rs. 100</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#9749;</div><div class="menu-item__info"><div class="menu-item__name">Americano</div><div class="menu-item__desc">Espresso with hot water, smooth and bold</div></div><div class="menu-item__price">Rs. 120</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#9749;</div><div class="menu-item__info"><div class="menu-item__name">Cappuccino</div><div class="menu-item__desc">Espresso with steamed milk and velvety foam</div></div><div class="menu-item__price">Rs. 150</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#9749;</div><div class="menu-item__info"><div class="menu-item__name">Latte</div><div class="menu-item__desc">Smooth espresso with lots of steamed milk</div></div><div class="menu-item__price">Rs. 150</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127861;</div><div class="menu-item__info"><div class="menu-item__name">Nepali Chiya</div><div class="menu-item__desc">Traditional milk tea with cardamom and ginger</div></div><div class="menu-item__price">Rs. 60</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127861;</div><div class="menu-item__info"><div class="menu-item__name">Masala Tea</div><div class="menu-item__desc">Spiced tea with cinnamon, clove and cardamom</div></div><div class="menu-item__price">Rs. 80</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127807;</div><div class="menu-item__info"><div class="menu-item__name">Green Tea</div><div class="menu-item__desc">Light, fresh, and full of antioxidants</div></div><div class="menu-item__price">Rs. 80</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#9749;</div><div class="menu-item__info"><div class="menu-item__name">Mocha</div><div class="menu-item__desc">Coffee with chocolate and steamed milk</div></div><div class="menu-item__price">Rs. 170</div></div>
+    </div>
+    <div class="menu-section" id="tab-nepali">
+      <div class="menu-item"><div class="menu-item__icon">&#129826;</div><div class="menu-item__info"><div class="menu-item__name">Chicken Steam Momo (10 pcs)</div><div class="menu-item__desc">Juicy chicken-filled dumplings, steamed fresh</div></div><div class="menu-item__price">Rs. 200</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129826;</div><div class="menu-item__info"><div class="menu-item__name">Veg Steam Momo (10 pcs)</div><div class="menu-item__desc">Mixed veggie filling with homemade chutney</div></div><div class="menu-item__price">Rs. 150</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#128293;</div><div class="menu-item__info"><div class="menu-item__name">Chicken Fried Momo</div><div class="menu-item__desc">Crispy pan-fried momos with spicy sauce</div></div><div class="menu-item__price">Rs. 220</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127836;</div><div class="menu-item__info"><div class="menu-item__name">Thukpa</div><div class="menu-item__desc">Hearty Himalayan noodle soup with vegetables</div></div><div class="menu-item__price">Rs. 200</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127798;</div><div class="menu-item__info"><div class="menu-item__name">Chicken Chowmein</div><div class="menu-item__desc">Stir-fried noodles with chicken and vegetables</div></div><div class="menu-item__price">Rs. 220</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127834;</div><div class="menu-item__info"><div class="menu-item__name">Dal Bhat Tarkari</div><div class="menu-item__desc">Traditional Nepali set meal with rice, lentils, veggies</div></div><div class="menu-item__price">Rs. 300</div></div>
+    </div>
+    <div class="menu-section" id="tab-breakfast">
+      <div class="menu-item"><div class="menu-item__icon">&#129859;</div><div class="menu-item__info"><div class="menu-item__name">Full Nepali Breakfast</div><div class="menu-item__desc">Roti, egg, bhatmas sadeko, pickle, and chiya</div></div><div class="menu-item__price">Rs. 250</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129370;</div><div class="menu-item__info"><div class="menu-item__name">Egg Toast</div><div class="menu-item__desc">Buttered toast with fried or scrambled eggs</div></div><div class="menu-item__price">Rs. 120</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129356;</div><div class="menu-item__info"><div class="menu-item__name">Pancakes (3 pcs)</div><div class="menu-item__desc">Fluffy pancakes with honey and butter</div></div><div class="menu-item__price">Rs. 200</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129363;</div><div class="menu-item__info"><div class="menu-item__name">Puri Tarkari</div><div class="menu-item__desc">Fried bread with spiced potato sabzi</div></div><div class="menu-item__price">Rs. 160</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129379;</div><div class="menu-item__info"><div class="menu-item__name">Oatmeal Bowl</div><div class="menu-item__desc">Warm oats with banana, honey and nuts</div></div><div class="menu-item__price">Rs. 180</div></div>
+    </div>
+    <div class="menu-section" id="tab-fastfood">
+      <div class="menu-item"><div class="menu-item__icon">&#127828;</div><div class="menu-item__info"><div class="menu-item__name">Chicken Burger</div><div class="menu-item__desc">Crispy fried chicken with lettuce and special sauce</div></div><div class="menu-item__price">Rs. 280</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127829;</div><div class="menu-item__info"><div class="menu-item__name">Veg Pizza (6")</div><div class="menu-item__desc">Thin crust pizza with fresh veggies and cheese</div></div><div class="menu-item__price">Rs. 350</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127790;</div><div class="menu-item__info"><div class="menu-item__name">Club Sandwich</div><div class="menu-item__desc">Triple-decker with egg, chicken, veggies and mayo</div></div><div class="menu-item__price">Rs. 220</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127839;</div><div class="menu-item__info"><div class="menu-item__name">French Fries</div><div class="menu-item__desc">Crispy golden fries with ketchup and seasoning</div></div><div class="menu-item__price">Rs. 120</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129364;</div><div class="menu-item__info"><div class="menu-item__name">Chicken Roll</div><div class="menu-item__desc">Spiced chicken wrapped in soft paratha</div></div><div class="menu-item__price">Rs. 180</div></div>
+    </div>
+    <div class="menu-section" id="tab-desserts">
+      <div class="menu-item"><div class="menu-item__icon">&#127856;</div><div class="menu-item__info"><div class="menu-item__name">Chocolate Brownie</div><div class="menu-item__desc">Warm, fudgy brownie with vanilla ice cream</div></div><div class="menu-item__price">Rs. 200</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129473;</div><div class="menu-item__info"><div class="menu-item__name">Cupcake</div><div class="menu-item__desc">Freshly baked daily - chocolate or vanilla</div></div><div class="menu-item__price">Rs. 100</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129518;</div><div class="menu-item__info"><div class="menu-item__name">Caramel Custard</div><div class="menu-item__desc">Silky smooth custard with rich caramel sauce</div></div><div class="menu-item__price">Rs. 160</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#127848;</div><div class="menu-item__info"><div class="menu-item__name">Ice Cream (2 scoops)</div><div class="menu-item__desc">Vanilla, chocolate or strawberry</div></div><div class="menu-item__price">Rs. 120</div></div>
+    </div>
+    <div class="menu-section" id="tab-drinks">
+      <div class="menu-item"><div class="menu-item__icon">&#129380;</div><div class="menu-item__info"><div class="menu-item__name">Cold Coffee</div><div class="menu-item__desc">Iced blended coffee with milk and cream</div></div><div class="menu-item__price">Rs. 180</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129381;</div><div class="menu-item__info"><div class="menu-item__name">Fresh Juice</div><div class="menu-item__desc">Seasonal fruits - mango, orange or mixed</div></div><div class="menu-item__price">Rs. 150</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129371;</div><div class="menu-item__info"><div class="menu-item__name">Lassi</div><div class="menu-item__desc">Thick creamy yogurt drink - sweet or salty</div></div><div class="menu-item__price">Rs. 120</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129483;</div><div class="menu-item__info"><div class="menu-item__name">Lemon Mint Cooler</div><div class="menu-item__desc">Fresh lemon, mint, and a hint of honey</div></div><div class="menu-item__price">Rs. 130</div></div>
+      <div class="menu-item"><div class="menu-item__icon">&#129695;</div><div class="menu-item__info"><div class="menu-item__name">Soft Drink (can)</div><div class="menu-item__desc">Coke, Sprite, Fanta</div></div><div class="menu-item__price">Rs. 80</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container--wide">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" style="display:inline-flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4);"><svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a><p>A cozy corner in Tilottama, Butwal.</p></div>
+      <div class="footer__col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Hours</h4><ul role="list"><li><a>Sun-Fri: 7am-9pm</a></li><li><a>Saturday: 8am-10pm</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul role="list"><li><a href="contact.html">Tilottama, Butwal</a></li><li><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Ranjit Cafe. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

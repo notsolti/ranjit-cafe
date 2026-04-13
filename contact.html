@@ -1,1 +1,89 @@
-<!-- Contact Page -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ranjit Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container--wide">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a>
+      <ul class="navbar__links" role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" class="active">Contact</a></li></ul>
+      <div class="navbar__actions"><button class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section__eyebrow">Get In Touch</p>
+    <h1 class="page-hero__title">Visit or Contact Us</h1>
+    <p class="page-hero__sub">We would love to hear from you - come in, call, or drop us a message.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card"><div class="contact-card__icon">&#128205;</div><div><div class="contact-card__label">Address</div><div class="contact-card__value">Tilottama-5, Butwal Road<br>Rupandehi, Lumbini Province, Nepal</div></div></div>
+        <div class="contact-card"><div class="contact-card__icon">&#128222;</div><div><div class="contact-card__label">Phone</div><div class="contact-card__value"><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></div></div></div>
+        <div class="contact-card"><div class="contact-card__icon">&#128231;</div><div><div class="contact-card__label">Email</div><div class="contact-card__value"><a href="mailto:hello@ranjitcafe.com.np">hello@ranjitcafe.com.np</a></div></div></div>
+        <div class="contact-card"><div class="contact-card__icon">&#128336;</div><div style="flex:1"><div class="contact-card__label">Opening Hours</div><table class="hours-table"><tr><td>Sunday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Monday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Tuesday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Wednesday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Thursday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Friday</td><td>7:00 AM - 9:00 PM <span class="open-badge">Open</span></td></tr><tr><td>Saturday</td><td>8:00 AM - 10:00 PM <span class="open-badge">Open</span></td></tr></table></div></div></div>
+        <div class="map-placeholder"><div style="text-align:center;"><div style="font-size:2rem;margin-bottom:var(--space-3)">&#128506;</div><p style="font-weight:600;color:var(--color-text)">Ranjit Cafe</p><p>Tilottama-5, Butwal Road, Rupandehi</p><a href="https://maps.google.com/?q=Tilottama,Rupandehi,Nepal" target="_blank" rel="noopener" class="btn btn--outline" style="margin-top:var(--space-4);font-size:var(--text-xs)">Open in Google Maps</a></div></div>
+      </div>
+      <div class="contact-form">
+        <p class="section__eyebrow">Send a Message</p>
+        <h3>We will Reply Promptly</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" name="firstName" placeholder="Ramesh" required></div>
+            <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" placeholder="Sharma"></div>
+          </div>
+          <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@example.com" required></div>
+          <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX"></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Table booking, feedback, etc."></div>
+          <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" placeholder="Tell us anything - a reservation, feedback, or just say hello!" required></textarea></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-2)">Send Message</button>
+          <div id="formSuccess" style="display:none;margin-top:var(--space-4);padding:var(--space-4);background:oklch(from var(--color-green) l c h / 0.12);color:var(--color-green);border-radius:var(--radius-md);font-size:var(--text-sm);font-weight:600;text-align:center;">Thank you! We will get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container" style="text-align:center;">
+    <p class="section__eyebrow">Easy to Find</p>
+    <h2 class="section__title">Near You in Tilottama</h2>
+    <p class="section__subtitle" style="margin:0 auto var(--space-8)">We are located near the Butwal Road in Tilottama-5, Rupandehi. Look for our warm lights and the coffee aroma!</p>
+    <div style="display:flex;gap:var(--space-6);justify-content:center;flex-wrap:wrap;">
+      <div style="text-align:center;"><div style="font-size:2rem;margin-bottom:var(--space-2)">&#128663;</div><strong style="display:block;font-size:var(--text-sm)">By Car</strong><span style="font-size:var(--text-sm);color:var(--color-text-muted)">5 min from Butwal Bus Park</span></div>
+      <div style="text-align:center;"><div style="font-size:2rem;margin-bottom:var(--space-2)">&#128666;</div><strong style="display:block;font-size:var(--text-sm)">By Tempo</strong><span style="font-size:var(--text-sm);color:var(--color-text-muted)">Tilottama route, stop at Cafe Chok</span></div>
+      <div style="text-align:center;"><div style="font-size:2rem;margin-bottom:var(--space-2)">&#128694;</div><strong style="display:block;font-size:var(--text-sm)">On Foot</strong><span style="font-size:var(--text-sm);color:var(--color-text-muted)">10 min walk from Tilottama Chok</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container--wide">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" style="display:inline-flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4);"><svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a><p>A cozy corner in Tilottama, Butwal where every cup tells a story.</p></div>
+      <div class="footer__col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Hours</h4><ul role="list"><li><a>Sun-Fri: 7am-9pm</a></li><li><a>Saturday: 8am-10pm</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul role="list"><li><a href="contact.html">Tilottama, Butwal</a></li><li><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Ranjit Cafe. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,1 +1,91 @@
-<!-- About Us Page -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Ranjit Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container--wide">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a>
+      <ul class="navbar__links" role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html" class="active">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <div class="navbar__actions"><button class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section__eyebrow">Our Story</p>
+    <h1 class="page-hero__title">About Ranjit Cafe</h1>
+    <p class="page-hero__sub">A little cafe with a big heart - born from passion, built on love.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="https://picsum.photos/seed/cafeinterior8/700/900" alt="Inside Ranjit Cafe" width="700" height="900" loading="lazy" class="about-img">
+        <div style="position:absolute;bottom:var(--space-8);right:calc(-1 * var(--space-4));background:var(--color-primary);padding:var(--space-5) var(--space-6);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);color:var(--color-text-inverse);text-align:center;">
+          <span style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;display:block;line-height:1">6+</span>
+          <span style="display:block;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.1em;margin-top:4px;opacity:0.85">Years of Love</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section__eyebrow">How It All Started</p>
+        <h2 style="font-size:var(--text-2xl);margin-bottom:var(--space-6)">From a Dream to Your Daily Cup</h2>
+        <p style="color:var(--color-text-muted);margin-bottom:var(--space-5)">Ranjit Cafe started in 2018 as a small tea stall in Tilottama, Butwal. The founder, Ranjit Ji, had one simple dream - to create a space where people could sit, sip good tea or coffee, eat wholesome food, and just breathe.</p>
+        <p style="color:var(--color-text-muted);margin-bottom:var(--space-5)">Over the years, that humble corner has grown into a beloved local cafe, serving hundreds of guests every week. From students grabbing breakfast before class to families meeting over momos - Ranjit Cafe has become part of Tilottama's daily life.</p>
+        <p style="color:var(--color-text-muted);margin-bottom:var(--space-8)">Today, we remain proudly local - sourcing ingredients from nearby markets, hiring from the community, and making every dish by hand, just as it was on day one.</p>
+        <a href="contact.html" class="btn btn--primary">Come Meet Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container--wide">
+    <div class="section__header"><p class="section__eyebrow">What We Stand For</p><h2 class="section__title">Our Core Values</h2></div>
+    <div class="cards-grid">
+      <div class="card" style="padding:var(--space-7)"><div style="font-size:2.2rem;margin-bottom:var(--space-4)">&#127807;</div><h3 style="font-size:var(--text-lg);margin-bottom:var(--space-3)">Fresh &amp; Local</h3><p style="font-size:var(--text-sm);color:var(--color-text-muted)">We visit Butwal's morning market daily to pick the freshest vegetables, herbs, and spices for our kitchen.</p></div>
+      <div class="card" style="padding:var(--space-7)"><div style="font-size:2.2rem;margin-bottom:var(--space-4)">&#10084;</div><h3 style="font-size:var(--text-lg);margin-bottom:var(--space-3)">Made with Heart</h3><p style="font-size:var(--text-sm);color:var(--color-text-muted)">No frozen shortcuts. Every dish is prepared fresh by our kitchen team using family-tested recipes.</p></div>
+      <div class="card" style="padding:var(--space-7)"><div style="font-size:2.2rem;margin-bottom:var(--space-4)">&#129309;</div><h3 style="font-size:var(--text-lg);margin-bottom:var(--space-3)">Community First</h3><p style="font-size:var(--text-sm);color:var(--color-text-muted)">We employ local youth, support nearby farmers, and give back to the Tilottama community whenever we can.</p></div>
+      <div class="card" style="padding:var(--space-7)"><div style="font-size:2.2rem;margin-bottom:var(--space-4)">&#128522;</div><h3 style="font-size:var(--text-lg);margin-bottom:var(--space-3)">Warm Welcome</h3><p style="font-size:var(--text-sm);color:var(--color-text-muted)">Everyone who walks through our door is family. Friendly smiles and honest service - always.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--wide">
+    <div class="section__header"><p class="section__eyebrow">The People</p><h2 class="section__title">Meet Our Team</h2><p class="section__subtitle">The warm faces behind your favourite food and drinks.</p></div>
+    <div class="team-grid">
+      <div class="team-card"><img src="https://picsum.photos/seed/man1/200/200" alt="Ranjit Ji Founder" width="200" height="200" loading="lazy" class="team-card__avatar"><div class="team-card__name">Ranjit Ji</div><div class="team-card__role">Founder &amp; Owner</div></div>
+      <div class="team-card"><img src="https://picsum.photos/seed/woman2/200/200" alt="Sita Devi Head Chef" width="200" height="200" loading="lazy" class="team-card__avatar"><div class="team-card__name">Sita Devi</div><div class="team-card__role">Head Chef</div></div>
+      <div class="team-card"><img src="https://picsum.photos/seed/man3/200/200" alt="Bikash Barista" width="200" height="200" loading="lazy" class="team-card__avatar"><div class="team-card__name">Bikash Rai</div><div class="team-card__role">Head Barista</div></div>
+      <div class="team-card"><img src="https://picsum.photos/seed/woman4/200/200" alt="Puja Service" width="200" height="200" loading="lazy" class="team-card__avatar"><div class="team-card__name">Puja Thapa</div><div class="team-card__role">Customer Service</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container--wide">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" style="display:inline-flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4);"><svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="var(--color-primary)" stroke-width="2"/><path d="M10 24 Q14 12 18 20 Q22 28 26 16" stroke="var(--color-accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="10" r="3" fill="var(--color-primary)" opacity="0.6"/></svg><span class="navbar__logo-text">Ranjit Cafe</span></a><p>A cozy corner in Tilottama, Butwal where every cup tells a story.</p></div>
+      <div class="footer__col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Hours</h4><ul role="list"><li><a>Sun-Fri: 7am-9pm</a></li><li><a>Saturday: 8am-10pm</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul role="list"><li><a href="contact.html">Tilottama, Butwal</a></li><li><a href="tel:+977-XXXXXXX">+977-XXXXXXX</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Ranjit Cafe. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
